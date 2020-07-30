@@ -1,6 +1,6 @@
 # Flask app
 
-This flask app uses `markdown` to generate html pages from markdown files. Pages on the website are represented as markdown files in the directory `pages`. Each markdown file in this directory is converted to an html file in the directory `templates`. Flask uses the html files in `templates` to serve each endpoint.
+This flask app uses the Python module `markdown` to generate html pages from markdown files. Pages on the website are represented as markdown files in the directory `pages`. Each markdown file in this directory is converted to an html file in the directory `templates`. Flask uses the html files in `templates` to serve each endpoint.
 
 ```
 ├── pages
