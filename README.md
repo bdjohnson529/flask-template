@@ -10,7 +10,7 @@ This flask app uses `markdown` to generate html pages from markdown files. Pages
 
 To convert the markdown files to html, from the root directory:
 ```
-./scripts/markdown_to_html.py
+python scripts/markdown_to_html.py
 ```
 
 
