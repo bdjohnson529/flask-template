@@ -15,7 +15,14 @@ python scripts/markdown_to_html.py
 
 
 ## Deployment
-Build is tested on a Windows 10 x64 computer. To serve the app locally:
+Build is tested on a Windows 10 x64 computer. First set up your virtual environment:
+```
+python -m venv env
+call env/Scripts/activate
+pip install -r requirements.txt
+```
+
+To serve the app locally:
 ```
 python scripts/markdown_to_html.py
 call env/Scripts/activate
