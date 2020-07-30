@@ -22,10 +22,9 @@ call env/Scripts/activate
 pip install -r requirements.txt
 ```
 
-To serve the app locally:
+Once the venv has been activated, you can serve the app locally:
 ```
 python scripts/markdown_to_html.py
-call env/Scripts/activate
 python app.py
 ```
 
