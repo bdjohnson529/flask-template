@@ -15,7 +15,7 @@ python scripts/markdown_to_html.py
 
 
 ## Deployment
-Build is tested on a Windows 10 x64 computer. Commands should be run from the the `Anaconda Prompt`. Commands may not work on the `Anaconda Powershell Prompt`. First set up your virtual environment:
+Build is tested on a Windows 10 x64 computer. Commands should be run using the the `Anaconda Prompt`, from the root of this repository. Commands may not work on the `Anaconda Powershell Prompt`. First set up your virtual environment:
 ```
 python -m venv env
 call env/Scripts/activate
