@@ -11,6 +11,11 @@ import markdown
 import os
 
 
+def linkCss(css_file):
+	header_str = f"""<head><link rel= "stylesheet" href= \"{{{{ url_for('static', filename=\'{css_file}\') }}}}\" ></head>\n"""
+
+	return header_str
+
 def main():
 
 	print("\nConverting markdown to html.................\n")
@@ -30,13 +35,18 @@ def main():
 
 		# convert to html string
 		readme_file = open(file['input_path'], "r")
-		md_template_string = markdown.markdown(
+		body_str = markdown.markdown(
 		    readme_file.read(), extensions=["fenced_code"]
 		)
 
+
+		header_str = linkCss('css/style.css')
+		html_str = header_str + body_str
+
+
 		# write to /templates
 		text_file = open(file['output_path'], "w")
-		text_file.write(md_template_string)
+		text_file.write(html_str)
 		text_file.close()
 
 

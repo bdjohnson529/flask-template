@@ -10,7 +10,7 @@ This flask app uses `markdown` to generate html pages from markdown files. Pages
 
 To convert the markdown files to html, from the root directory:
 ```
-./scripts/markdown_to_html.py
+python scripts/markdown_to_html.py
 ```
 
 
@@ -36,6 +36,12 @@ The venv files are omitted from the Git repo for simplicity; notice that the `.g
 python -m pip freeze > requirements.txt
 ```
 
+### CSS Styling
+CSS styling is performed using the files in the directory `static/css/`. To apply css styling to markdown files, simply change line 43 in `markdown_to_html.py`. In the example below, the styling in `style.css` will be applied to all markdown files.
+
+```
+header_str = linkCss('css/style.css')
+```
 
 ## Credit
 This solution is made possible by the great community of open-source programmers who publish their solutions on the web.
