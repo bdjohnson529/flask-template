@@ -28,6 +28,11 @@ python scripts/markdown_to_html.py
 python app.py
 ```
 
+This command serves the application on a port on your local machine. When you run `app.py`, Flask indicates which port is being used on your local IP address (127.0.0.1). The default port is usually 5000. To access the website, navigate to that port using any web browser.
+```
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
 
 ## Contributing
 Virtual environments provide a way to containerize the deployment of the flask app. To create a new virtual environment and install all dependencies, use the following commands. The *requirements.txt* is used to maintain versioning of Python packages between machines.
