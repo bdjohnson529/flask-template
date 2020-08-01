@@ -17,8 +17,8 @@ python scripts/markdown_to_html.py
 ## Deployment
 Build is tested on a Windows 10 x64 computer. Commands should be run using the the `Anaconda Prompt`, from the root of this repository. Commands may not work on the `Anaconda Powershell Prompt`. First set up your virtual environment:
 ```
-python -m venv env
-call env/Scripts/activate
+python -m venv venv
+venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
@@ -37,8 +37,8 @@ This command serves the application on a port on your local machine. When you ru
 ## Contributing
 Virtual environments provide a way to containerize the deployment of the flask app. To create a new virtual environment and install all dependencies, use the following commands. The *requirements.txt* is used to maintain versioning of Python packages between machines.
 ```
-python -m venv env
-call env/Scripts/activate
+python -m venv venv
+venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
