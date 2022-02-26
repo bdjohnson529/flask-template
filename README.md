@@ -22,6 +22,7 @@ venv\Scripts\activate
 ```
 
 Install the project dependencies
+```
 pip install -r requirements.txt
 ```
 
