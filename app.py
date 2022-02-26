@@ -1,19 +1,22 @@
+import argparse
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
-
-
-
 @app.route('/')
 def home():
-    return render_template('homepage.html')
-
-@app.route('/git_tutorial/')
-def git_tutorial():
-    return render_template('git_tutorial.html')
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
-    app.run()
+    # Arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--prod', action='store_true', default=False)
+    args = vars(parser.parse_args())
+
+    # Settings
+    debug = True if args['prod'] else False
+
+    # Execute
+    app.run(debug=debug)
