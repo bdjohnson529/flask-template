@@ -1,7 +1,7 @@
 # Flask app
 This is a template flask application, with scaffolding already created.
 
-## Deployment
+## Instructions
 Install project dependencies.
 ```bash
 pip install -r requirements.txt
