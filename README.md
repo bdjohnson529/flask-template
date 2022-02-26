@@ -19,6 +19,9 @@ Build is tested on a Windows 10 x64 computer. Commands should be run using the t
 ```
 python -m venv venv
 venv\Scripts\activate
+```
+
+Install the project dependencies
 pip install -r requirements.txt
 ```
 
