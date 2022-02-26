@@ -12,13 +12,13 @@ Run the application.
 python app.py
 ```
 
-Access the app on in a web browser.
+Load the app in a web browser.
 ```bash
 http://127.0.0.1:5000/
 ```
 
-## Development
-Run in development:
+## Runtime Options
+Run without reloading pages when files are changed.
 ```bash
-python app.py --development
+python app.py --no-reload
 ```
