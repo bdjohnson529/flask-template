@@ -1,16 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <h1>
-    Hello World!
-  </h1>
+  <div class="text-center">
+    <h1>
+      Hello World!
+    </h1>
 
-  <hr>
+    <hr>
 
-  <p>
-    This is a simple demo application in Flask. Take a look at the code on <a href="https://github.com/bdjohnson529/flask-template.git" target="_blank">Github!</a>
+    <p>
+      This is a simple demo application in Flask. Take a look at the code on <a href="https://github.com/bdjohnson529/flask-template.git" target="_blank">Github!</a>
+    </p>
 
-  </p>
+    <img src="{{ url_for('static', filename='img/mountain.jpg') }}"></img>
+  </div>
 
-  <img src="{{ url_for('static', filename='img/mountain.jpg') }}"></img>
 {% endblock %}
