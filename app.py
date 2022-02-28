@@ -1,6 +1,5 @@
 import argparse
 from flask import Flask, render_template, request
-from flask import session
 
 from src.pipelines import count_frequencies
 
