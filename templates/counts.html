@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="text-center">
+    <h1>
+      <a href="/">
+        Home
+      </a>
+    </h1>
+
+    <hr>
+
+    <p>
+      You entered the string : {{ string }}
+    </p>
+
+    <p>
+      The characters have frequency : 
+    </p>
+
+    {% for key in char_freq | sort %}
+      <p>{{ key }} : {{ char_freq[key] }}</p>
+    {% endfor %}
+    
+  </div>
+
+{% endblock %}

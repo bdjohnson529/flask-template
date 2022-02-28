@@ -13,6 +13,13 @@
     </p>
 
     <img src="{{ url_for('static', filename='img/mountain.jpg') }}"></img>
+
+
+    <form action="/count" method = "POST">
+      <p>Please enter a string. </p>
+      <p><input type = "text" name = "String" /></p>
+      <p><input type = "submit" value = "Submit" /></p>
+    </form>
   </div>
 
 {% endblock %}
