@@ -17,12 +17,12 @@ For more detailed information see the [Docker docs](https://docs.docker.com/lang
 
 Build Docker image.
 ```bash
-docker build --tag flask-template . 
+docker build -t flask-template . 
 ```
 
 Run image in Docker container.
 ```bash
-docker run flask-template
+docker run -d -p 8000:5000 flask-template
 ```
 
 
